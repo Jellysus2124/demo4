@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Custom Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="members-style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to 10Anh Exclusive content </h1>
+      <nav>
+        <button id="homeButton" class="active">Home</button>
+        <button id="membersButton">Members</button>
+        <button id="happyDayButton">Exclusive letters</button>
+      </nav>
+    </header>
+    <main>
+      <section id="homeSection" class="show">
+        <h2>Này, chả có gì ở đây đâu...</h2>
+        <h5>(hint: click the picture below) </h5>
+        <img id="image" src="women.jpg" alt="Image" />
+        <div id="hiddenContent">
+          <p style="font-size: 19px; justify-content: center; padding-left: 25px;">
+            <em> <strong>
+               Chỉ có những lời chúc tốt đẹp nhất và sự quan tâm của ae
+              Mành Ươi chúng tôi đến các quý bà xinh tươi của chúng ta
+            </em> </strong>
+          </p>
+        </div>
+      </section>
+      <section id="membersSection">
+        <!-- Members section content will be dynamically generated -->
+      </section>
+      <section id="happyDaySection">
+        <h2>
+          Put the password that you got from one of the bois to get his
+          exclusive letter to you
+        </h2>
+        <div id="passwordBox">
+          <input type="text" id="passwordInput" placeholder="Enter password" />
+          <button id="submitPassword">Submit</button>
+        </div>
+        <div id="imageContainer">
+          <!-- Container for the image -->
+          <img src="women.jpg" alt="Image description" />
+        </div>
+        <div id="paragraphs">
+          <!-- Paragraphs will be dynamically generated here -->
+        </div>
+      </section>
+
+     
+    </main>
+    <footer>
+      <p>&copy; 2024 10Anh Custom Website. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

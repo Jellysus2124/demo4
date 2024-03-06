@@ -1,0 +1,229 @@
+/* Reset default browser styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+/* Buttons */
+button {
+  background-color: #ff6666;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 25px; /* More rounded corners for a modern look */
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px; /* Slightly increase letter spacing for a stylish touch */
+  outline: none; /* Remove button outline on focus */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+button:hover {
+  background-color: #ff4d4d; /* Darker shade on hover for a vibrant effect */
+  transform: translateY(-2px) scale(1.05); /* Lift and scale up the button on hover */
+}
+
+button.active {
+  background-color: #6666ff;
+}
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 767px) {
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  display: none;
+  padding: 20px;
+}
+
+h2,
+h5 {
+  text-align: center;
+}
+
+#image {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 20px auto; /* Added margin to the top and bottom */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#image:hover {
+  transform: scale(1.1);
+}
+
+#hiddenContent {
+  display: none;
+  text-align: center;
+}
+
+.show {
+  display: block;
+}
+
+#happyDaySection h2 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.member {
+  width: calc(33.33% - 20px); /* Adjusted width with spacing */
+  margin-bottom: 20px; /* Spacing between rows */
+  padding: 20px;
+  background-color: #fff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  display: inline-block; /* Ensure boxes stay on the same line */
+  margin-right: 20px; /* Space between boxes */
+  margin-bottom: 20px; /* Spacing between rows */
+}
+
+.member:hover {
+  transform: translateY(-5px); /* Lifts the box slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect on hover */
+}
+
+.member .info {
+  display: none;
+  padding-top: 20px; /* Increased padding at the top */
+}
+
+.member.opened {
+  height: auto;
+}
+
+.member.opened .info {
+  display: block;
+}
+
+.member .info .image {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  margin: 0 auto 20px; /* Adjusted margin for better alignment */
+  border-radius: 30%; /* Make the image circular */
+  overflow: hidden; /* Ensure image doesn't exceed the circle */
+}
+
+.member .info p {
+  text-align: center;
+}
+
+/* Happy 8/3 day section */
+#happyDaySection {
+  text-align: center;
+  background-color: #ff9aa2; /* Salmon pink */
+  padding: 50px 0;
+}
+
+#passwordBox {
+  margin-bottom: 20px;
+}
+
+#passwordInput {
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ff6b81; /* Coral pink */
+  border-radius: 5px;
+  width: 200px;
+}
+
+#submitPassword {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #ff6b81; /* Coral pink */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#submitPassword:hover {
+  background-color: #ff847c; /* Lighter coral pink on hover */
+}
+
+#paragraphs {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#paragraphs p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333; /* Dark gray */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 10px;
+}
+
+#paragraphs p:hover {
+  transform: translateY(-5px); /* Lifts the paragraph slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect on hover */
+}
+
+#imageContainer {
+  display: none; /* Initially hide the image container */
+}
+
+#imageContainer img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#imageContainer img:hover {
+  transform: scale(1.05); /* Scale up the image slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect on hover */
+}
